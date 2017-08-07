@@ -8,5 +8,6 @@ fun main(args: Array<String>) {
     val (name, age) = jack
     println(name)
     println(age)
-
+    println()
 }
+
