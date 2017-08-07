@@ -9,5 +9,13 @@ fun main(args: Array<String>) {
     println(name)
     println(age)
     println()
+    test(Test2())
+
+}
+
+fun test(baseClass: BaseClass) = when (baseClass) {
+    is Test1 -> baseClass.test()
+    is Test2 -> baseClass.test()
+    is Test3 -> baseClass.test()
 }
 
